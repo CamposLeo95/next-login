@@ -8,9 +8,11 @@ export default function LoginPage() {
   return (
     <div className={styles.background}>
       <LoginCard title={'Acessar seu usuario'}>
-        <InputLogin type={'email'} placeholder={'Digite seu email'} />
-        <InputLogin type={'password'} placeholder={'Digite sua senha'} />
-        <ButtonLogin>Entrar</ButtonLogin>
+        <form className={styles.form}>
+          <InputLogin type={'email'} placeholder={'Digite seu email'} />
+          <InputLogin type={'password'} placeholder={'Digite sua senha'} />
+          <ButtonLogin>Entrar</ButtonLogin>
+        </form>
       </LoginCard>
     </div>
   );

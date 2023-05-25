@@ -8,10 +8,12 @@ export default function CadastroPage() {
   return (
     <div className={styles.background}>
       <LoginCard title={'Cadastre-se'}>
-        <InputLogin type={'name'} placeholder={'Insira seu nome'} />
-        <InputLogin type={'email'} placeholder={'Insira seu email'} />
-        <InputLogin type={'password'} placeholder={'Insira sua senha'} />
-        <ButtonLogin>Entrar</ButtonLogin>
+        <form className={styles.form}>
+          <InputLogin type={'name'} placeholder={'Insira seu nome'} />
+          <InputLogin type={'email'} placeholder={'Insira seu email'} />
+          <InputLogin type={'password'} placeholder={'Insira sua senha'} />
+          <ButtonLogin>Entrar</ButtonLogin>
+        </form>
       </LoginCard>
     </div>
   );

@@ -2,9 +2,6 @@
     background-color: #fff;
     width: 400px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 8px;
     border-radius: 3px;
+    text-align: center;
 }
