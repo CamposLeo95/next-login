@@ -1,14 +1,11 @@
-export default function Login() {
+import styles from '../styles/pages.module.css';
+
+import LoginCard from '../src/components/loginCard/LoginCard';
+
+export default function LoginPage() {
   return (
-    <div>
-      <>pagina Login</>
+    <div className={styles.background}>
+      <LoginCard title={'Login'}></LoginCard>
     </div>
   );
 }
-export default function Login() {
-    return (
-      <div>
-        <>pagina Login</>
-      </div>
-    );
-  }
