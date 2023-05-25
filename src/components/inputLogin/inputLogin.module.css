@@ -1,1 +1,9 @@
-.input {}
+.input {
+    border: none;
+    background-color: #d8d7d7;
+    padding: var(--padding-input);
+    border-radius: 2px;
+    outline: none;
+    font-size: medium;
+    color: var(--primary-color);
+}

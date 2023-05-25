@@ -1,3 +1,5 @@
+import styles from './ButtonLogin.module.css';
+
 export default function ButtonLogin({ children }) {
-  return <button>{children}</button>;
+  return <button className={styles.button}>{children}</button>;
 }

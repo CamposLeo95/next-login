@@ -1,3 +1,11 @@
+:root {
+  --primary-color: rgb(6, 1, 24);
+  --secondary-color: rgb(36, 5, 136);
+  --secondary-color-opacity: rgba(36, 5, 136, 0.822);
+
+  --padding-input: 10px;
+}
+
 html,
 body {
   padding: 0;
@@ -19,6 +27,7 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
