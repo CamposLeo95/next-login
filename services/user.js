@@ -17,6 +17,10 @@ function readToken(token) {
   }
 }
 
+export function verifica(token) {
+  return readToken(token);
+}
+
 export function cadastro(body) {
   const user = users.find(({ email }) => email === body.email);
 
@@ -34,7 +38,7 @@ export function login(body) {
   if (!user) throw new Error('Usuário não cadastrado');
   if (user.password !== body.password) throw new Error('Usuário ou senha inválidos');
 
-  const token = createToken(user);
+  const token = createToken(body);
 
   return token;
 }
